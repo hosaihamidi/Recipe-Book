@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Details - Pizza</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="add-recipe.html">Add Recipe</a></li>
+          <li><a href="recipe-list.html">Recipe List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="search-bar">
+      <input type="text" id="search" placeholder="Search recipes..." />
+      <button onclick="searchRecipes()">Search</button>
+    </section>
+
+    <section class="recipe-details">
+      <h2>Classic Margherita Pizza</h2>
+
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP0HbRY0SsECXq3XHqjXUBw3CqK1VfE5PX1w&s"
+        alt="Classic Margherita Pizza"
+        style="max-width: 100%; height: auto"
+      />
+
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>1 pizza dough (store-bought or homemade)</li>
+        <li>1 cup tomato sauce</li>
+        <li>200g mozzarella cheese, sliced</li>
+        <li>Fresh basil leaves</li>
+        <li>Olive oil</li>
+        <li>Salt and pepper to taste</li>
+        <li>1 tsp dried oregano</li>
+      </ul>
+
+      <h3>Cooking Instructions:</h3>
+      <ol>
+        <li>Preheat the oven to 475°F (245°C).</li>
+        <li>
+          Roll out the pizza dough on a floured surface to your desired
+          thickness.
+        </li>
+        <li>Spread a thin layer of tomato sauce over the dough.</li>
+        <li>Top with mozzarella slices and a sprinkle of dried oregano.</li>
+        <li>
+          Bake the pizza in the oven for 10-12 minutes or until the crust is
+          golden and cheese is bubbly.
+        </li>
+        <li>
+          Remove the pizza from the oven and garnish with fresh basil leaves.
+        </li>
+        <li>
+          Drizzle with a little olive oil, season with salt and pepper, and
+          serve hot!
+        </li>
+      </ol>
+
+      <p><strong>Recipe submitted by:</strong> Hosai Hamidi</p>
+      <h3>Rate this recipe:</h3>
+      <form id="rating-form">
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating">
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select>
+        <button type="submit">Submit Rating</button>
+      </form>
+    </section>
+  </body>
+</html>
